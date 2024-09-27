@@ -1,0 +1,25 @@
+main p{
+    color: blue;
+}
+footer p{
+    color:pink;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#first{
+    color: brown;
+}
+.green {
+    color: aqua;
+}
+.bigger {
+    color: beige;
+}
+main .bigger{
+    font-family: jokerman;
+    font-size: larger;
+}
+.bolder {
+    font-weight: bolder;
+}
