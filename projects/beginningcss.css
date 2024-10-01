@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    font-size: larger;
+    background-color: lightgrey;
+    
+}
+#first{
+    color:black;
+    font-weight: 600;
+    font-style: italic;
+    font-family: cursive;
+    text-decoration: double;
+}
+.second{
+    font-weight: 700;
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+.third{
+    color: darkgrey;
+    font-family: jokerman;
+}
+.fifth{
+    text-decoration: underline;
+}
+.sixth{
+    color: red;
+}
+.seventh{
+    color: black;
+}
+.eight{
+    color: black;
+    background-color: white;
+}
