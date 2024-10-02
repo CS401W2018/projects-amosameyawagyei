@@ -1,0 +1,16 @@
+#Messi{
+    width: 800px;
+    height: 600px;
+}
+ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+    
+  }
+  
+  
+  ul li {
+    display: inline; 
+    margin-right: 15px; 
+  }
