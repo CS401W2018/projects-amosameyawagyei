@@ -1,0 +1,48 @@
+body{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(c.jpg);
+    background-color: white;
+    font-weight: bolder;
+}
+.first{
+    background-color: black;
+}
+nav a{
+    color: black;
+}
+
+  
+  
+
+.current{
+    color: yellow;
+}
+.list{
+    list-style-image:url(file.jpg);
+    background-repeat: no-repeat;
+    padding-left: 5%;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;  
+}
+
+
+.third{
+    font-family: cursive;
+}
+.forth{
+    font-family: fantasy;
+}
+main.fifth{
+    font-family: monospace;
+}
+
+header.tenth{
+    background: url('s.jpeg') top right no-repeat;
+
+}
+
