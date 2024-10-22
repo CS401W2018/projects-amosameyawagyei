@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.class{
+    display: grid;
+    grid-template-columns: 1fr 5fr; 
+    grid-template-areas: 
+    "header header header header"
+    "navigation navigation navigation navigation"
+    "aside1 main main main"
+    "footer footer footer footer";
+}
+
+header{grid-area: header;
+background-color: greenyellow;}
+nav{grid-area: navigation;
+    background-color: aliceblue;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: aliceblue;
+    padding: 20px;
+}
+nav a {
+    display: block; 
+    text-decoration: none; 
+    color: black;
+    padding: 10px 20px; 
+    font-size: 16px;
+}
+
+.aside1{grid-area: aside1;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 50px;
+    margin-top: 50px;   
+}
+
+.itemA{
+    grid-area: main1;
+    width: 220px;
+    box-shadow: 5px 1px 5px 5px blue;
+}
+
+.itemB{
+    grid-area: header2;
+    width: 220px;
+    box-shadow: 5px 1px 5px 5px blue;
+}
+
+.itemC{
+    grid-area: header1;
+    width: 220px;
+    box-shadow: 5px 1px 5px 5px blue;
+}
+.itemD{
+    grid-area: main3;
+    width: 220px;
+    box-shadow: 5px 1px 5px 5px blue;
+}
+.itemE{
+    grid-area: main1;
+    width: 220px;
+    box-shadow: 5px 1px 5px 5px blue;
+}
+.itemF{grid-area: header3;
+    width: 220px;
+    box-shadow: 5px 1px 5px 5px blue;
+
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 40px;
+    
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 40px;
+}
+
+ 
+
+nav a:hover {
+    background-color: lightgray; 
+    color: blue; 
+}
+
