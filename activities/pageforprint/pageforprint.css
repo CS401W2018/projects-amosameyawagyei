@@ -24,6 +24,7 @@ header h1{
 nav{
     background-color: cadetblue;
     display: flex;
+    flex-direction: wrap;
     justify-content: space-around;
 }
 nav a{
@@ -35,4 +36,24 @@ nav a{
 .pic img{
     width: 100%;
 
+}
+@media only screen and (max-width: 800px) {
+  nav{
+    flex-direction: column;
+
+  }
+  nav  a{
+    border-bottom: thin solid white;
+  }
+  .row{
+    flex-wrap: wrap;
+  }
+  .card{
+    width:100%;
+    margin:10px;
+  }
+  .middle{
+    order: -1;
+  }
+    
 }
