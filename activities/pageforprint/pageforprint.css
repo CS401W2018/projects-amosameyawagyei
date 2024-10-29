@@ -20,7 +20,7 @@ header h1{
     box-shadow: 3px 3px 5cm rgba(50, 50, 50,50%);
     margin: 5px;
     
-}
+} 
 nav{
     background-color: cadetblue;
     display: flex;
@@ -42,7 +42,7 @@ nav a{
     flex-direction: column;
 
   }
-  nav  a{
+  nav  a{ 
     border-bottom: thin solid white;
   }
   .row{
