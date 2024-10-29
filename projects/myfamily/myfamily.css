@@ -1,0 +1,188 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-areas:
+      "header header"
+      "navigation navigation"
+      "aside main"
+      "footer footer";
+}
+
+header {
+  grid-area: header;
+  background-color: rgb(77, 77, 133);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  grid-area: navigation;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+aside {
+  grid-area: aside;
+  padding: 20px;
+  
+}
+
+.fam {
+  width: 300px;
+  border: thin solid black;
+  box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.5);
+  margin: 5px;
+  
+}
+
+.fam img {
+  width: 100%;
+}
+
+main {
+  grid-area: main;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.item {
+  width: 400px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 255, 0.2);
+}
+.itemA{
+  grid-area: main1;
+  width: 400px;
+  box-shadow: 1px 1px 1px 1px grey;
+  
+ 
+}
+.itemA img{
+  width: 100%;
+}
+
+.itemB{
+  grid-area: header2;
+  width: 400px;
+  box-shadow: 1px 1px 1px 1px grey;
+}
+.itemB img{
+  width: 100%;
+}
+
+.itemC{
+  grid-area: header1;
+  width: 400px;
+  box-shadow: 1px 1px 1px 1px grey;
+}
+.itemC img{
+  width: 100%;
+}
+.itemD{
+  grid-area: main3;
+  width: 400px;
+  box-shadow: 1px 1px 1px 1px grey;
+}
+.itemD img{
+  width: 100%;
+}
+.itemE{
+  grid-area: main1;
+  width: 400px;
+  box-shadow: 1px 1px 1px 1px grey;
+
+}
+.itemE img{
+  width: 100%;
+}
+.itemF{grid-area: header3;
+  width: 400px;
+  box-shadow: 1px 1px 1px 1px grey;
+
+}
+.itemF img{
+  width: 100%;
+}
+
+footer {
+  grid-area: footer;
+  background-color: rgb(77, 77, 133);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    grid-template-areas:
+        "header"
+        "navigation"
+        "main"
+        "aside"
+        "footer";
+}
+
+aside {
+  order: 2;
+}
+header {
+  order: 1;
+  margin: 0;
+  padding: 0;
+  
+}
+main {
+  order: 4;
+}
+
+header h1{
+  margin: 0;
+}
+
+
+  nav {
+      flex-direction: column;
+      background-color: gold;
+      order: 2;
+     
+     
+  }
+  nav a {
+      border-bottom: thin solid white;
+      
+  }
+  .row {
+      flex-direction: column;
+
+      
+  }
+  .item{
+      flex-direction: column;
+  }
+ footer{
+  order: 5;
+ }
+}
