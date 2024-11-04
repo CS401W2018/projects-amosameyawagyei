@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.a {
+    font-style: italic;
+}
+
+.b {
+    color: blue;
+}
+
+.table {
+    margin: 5px auto;
+    border-spacing: 0;
+    caption-side: top;
+    background-color: yellow;
+}
+
+.table td, .table th {
+    border: thin solid black;
+}
+
+.table td {
+    font-weight: bolder;
+    color: blue;
+}
+
+.table thead {
+    background-color: black;
+    color: white;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: grey;
+}
+
+.table tfoot {
+    background-color: green;
+    color: black;
+}
+
+.class {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas: 
+        "header header"
+        "navigation navigation"
+        "main aside1"
+        "footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: greenyellow;
+}
+
+header input[type=text] {
+    float: right;
+    margin-right: 16px;
+    font-size: 17px;
+    border: thin solid greenyellow;
+}
+
+nav {
+    grid-area: navigation;
+    background-color: aliceblue;
+    padding: 5px;
+    display: flex;
+}
+
+nav a {
+    display: block; 
+    text-decoration: none; 
+    color: black;
+    padding: 10px 20px; 
+    font-size: 16px;
+}
+
+.aside1 {
+    grid-area: aside1;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+}
+
+main {
+    grid-area: main;
+    padding: 10px; 
+}
+
+footer {
+    grid-area: footer;
+}
