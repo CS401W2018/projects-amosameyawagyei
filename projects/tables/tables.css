@@ -14,11 +14,11 @@ body {
     margin: 5px auto;
     border-spacing: 0;
     caption-side: top;
-    background-color: yellow;
+    
 }
 
 .table td, .table th {
-    border: thin solid black;
+    border: thick solid pink;
 }
 
 .table td {
@@ -29,6 +29,7 @@ body {
 .table thead {
     background-color: black;
     color: white;
+    
 }
 
 .table tbody tr:nth-child(odd) {
@@ -36,7 +37,7 @@ body {
 }
 
 .table tfoot {
-    background-color: green;
+    background-color: yellowgreen;
     color: black;
 }
 
