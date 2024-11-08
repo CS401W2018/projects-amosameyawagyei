@@ -12,28 +12,55 @@
     </header>
     <main>
         <form action="processing.html" method="post">
-          First Name: <input type="text" name="first"><br>
-          Last Name: <input type="text" name="last"><br>
-          Password: <input type="password" name="pass"><br>
-          <input type="submit"><br>
-          <input type="button" value="Done"><br>
-          <label for="username">Username:</label><br>
-          <input type="radio" id="html" name="fav_language" value="HTML">
-          <label for="html">HTML</label><br>
+            <fieldset>
+                <legend>Sign Up</legend>
+            <div class="form-row">
+            <label for="frame">First Name:</label>
+           <input type="text" name="first" value="Joe" required >
+        </div>
+        <div>
+            <label for="frame">Last Name:</label>
+           <input type="text" name="last">
+        </div>
+        <div class="form-row">
+            <label for="frame">Password</label>
+         <input type="password" name="pass">
+        </div>
+        
+         </div>
+         <div class="form-row">
+            Class:
+          <label><input type="radio" id="html" name="fav_language" value="HTML"></label>
+          <label for="html">HTML</label>
           <input type="radio" id="css" name="fav_language" value="CSS">
-          <label for="css">CSS</label><br>
-          <select name="state" id="state"></select>
-          <option value="blank"></option>
-          <option value="Hawaii">Hawaii</option>
-          <option value="California">California</option>
-          <option value="Utah">Hawaii</option>
-          <textarea name="comment" id=""></textarea>
-          <input type="submit">
+        </div>
+          <label for="css">CSS</label>
+        <div class="form-row">
+            <label for="state">State</label>
+          <select name="state" id="state">
+                <option value="blank"></option>
+                <option value="Hawaii">Hawaii</option>
+                <option value="California">California</option>
+                <option value="Utah">Hawaii</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label for="comments">Comments</label>
+          <textarea name="comment" id="Comments"></textarea>
+         
+        </div>
+        <div class="form-row">
+            <div class="spacer"></div>
+            <input type="submit">
+        
+        </div>
+    </fieldset>
+        
         </form>
         <h2>Engagement Assignment</h2>
-        <p>The action attribute specifies the URL to which the form data should be sent when the user submits the form</p>
-        <p>The method attribute specifies the HTTP method to use when sending form data.</p>
-        <p>In summary, GET is suitable for data retrieval without security concerns, while POST is ideal for more secure, data-altering requests.</p>
+        <p>Use basic css styling or flexbox</p>
+        <p>He wants us to use flex because it works really nice and helps us to build responsive pages</p>
+        
     </main>
     <footer>
        <p>&copy; 2024 Amos Ameyaw Agyei</p>;
