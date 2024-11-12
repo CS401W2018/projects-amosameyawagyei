@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Sign-Up Page</h1>
+    </header>
+
+    <main>
+        <form action="input.html" method="post">
+            <fieldset>
+                <legend>Sign Up</legend>
+        
+                <div class="forms-row">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="first name" required>
+                </div>
+
+                <div class="forms-row">
+                    <label for="middleName">Middle Name:</label>
+                    <input type="text" name="middleName" id="middleName" placeholder="middle name">
+                </div>
+
+                
+                <div class="forms-row">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="last name" required>
+                </div>
+
+            
+                <div class="forms-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="email" required>
+                </div>
+
+    
+                <div class="forms-row">
+                    <label for="birthdate">Birthdate:</label>
+                    <input type="date" name="birthdate" id="birthdate" required>
+                </div>
+
+                
+                <div class="forms-row">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="phone number" required>
+                </div>
+
+
+                <div class="forms-row">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+
+                <div class="checkbox-row">
+                    <div class="prefer">Gender:</div>
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+
+                <div class="checkbox-row">
+                    <label><input type="checkbox" name="terms" required> I agree to the terms and conditions</label>
+                </div>
+
+                <div class="forms-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state" required>
+                        <option value="">Select a state</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="California">California</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Alaska">Alaska</option>
+                    </select>
+                </div>
+
+            
+                <div class="forms-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments" placeholder="Your comments"></textarea>
+                </div>
+
+    
+                <div class="forms-row">
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Amos Ameyaw Agyei</p>
+    </footer>
+</body>
+</html>
