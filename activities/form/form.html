@@ -8,62 +8,138 @@
 </head>
 <body>
     <header>
-        <h1>Forms</h1>
+        <h1>Welcome to Our Sign-Up Page</h1>
     </header>
+
     <main>
-        <form action="processing.html" method="post">
+        <form action="processing.html" method="post" id="myForm">
             <fieldset>
                 <legend>Sign Up</legend>
-            <div class="form-row">
-            <label for="frame">First Name:</label>
-           <input type="text" name="first" value="Joe" required >
-        </div>
-        <div>
-            <label for="frame">Last Name:</label>
-           <input type="text" name="last">
-        </div>
-        <div class="form-row">
-            <label for="frame">Password</label>
-         <input type="password" name="pass">
-        </div>
         
-         </div>
-         <div class="form-row">
-            Class:
-          <label><input type="radio" id="html" name="fav_language" value="HTML"></label>
-          <label for="html">HTML</label>
-          <input type="radio" id="css" name="fav_language" value="CSS">
-        </div>
-          <label for="css">CSS</label>
-        <div class="form-row">
-            <label for="state">State</label>
-          <select name="state" id="state">
-                <option value="blank"></option>
-                <option value="Hawaii">Hawaii</option>
-                <option value="California">California</option>
-                <option value="Utah">Hawaii</option>
-            </select>
-        </div>
-        <div class="form-row">
-            <label for="comments">Comments</label>
-          <textarea name="comment" id="Comments"></textarea>
-         
-        </div>
-        <div class="form-row">
-            <div class="spacer"></div>
-            <input type="submit">
-        
-        </div>
-    </fieldset>
-        
+                <div class="form-row">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="first name" >
+                </div>
+
+                <div class="form-row">
+                    <label for="middleName">Middle Name:</label>
+                    <input type="text" name="middleName" id="middleName" placeholder="middle name">
+                </div>
+
+                
+                <div class="form-row">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="last name" >
+                </div>
+
+            
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="email">
+                </div>
+
+    
+                <div class="form-row">
+                    <label for="birthdate">Birthdate:</label>
+                    <input type="date" name="birthdate" id="birthdate">
+                </div>
+
+                
+                <div class="form-row">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="phone number" >
+                </div>
+
+
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+
+                <div class="checkbox-row">
+                    <div class="prefer">Gender:</div>
+                    <label><input type="radio" name="gender" value="male" > Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+
+                <div class="checkbox-row">
+                    <label><input type="checkbox" name="terms" > I agree to the terms and conditions</label>
+                </div>
+
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state" >
+                        <option value="">Select a state</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="California">California</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Alaska">Alaska</option>
+                    </select>
+                </div>
+
+            
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments" placeholder="Your comments"></textarea>
+                </div>
+
+    
+                <div class="form-row">
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
         </form>
         <h2>Engagement Assignment</h2>
-        <p>Use basic css styling or flexbox</p>
-        <p>He wants us to use flex because it works really nice and helps us to build responsive pages</p>
-        
+        <p>JavaScript is a type of language that is used to code the front-end of the internet pages</p>
+        <p>The first way is that it is run on virtual machines or a browser or in the DOM (Document Object Module)</p>
+        <p>The other way is with Node.js</p>
+        <p> The most popular front-end js library was JQuery</p>
+        <p>React-Native</p>
+   
     </main>
+
+
     <footer>
-       <p>&copy; 2024 Amos Ameyaw Agyei</p>;
+        <p>&copy; 2024 Amos Ameyaw Agyei</p>
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event){
+            event.preventDefault();
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const formData ={
+                firstName: firstName,
+                lastName: lastName
+            }
+            if (!firstName || !lastName) {
+                alert("First name and last name required");
+                return;
+            }
+            console.log(formData)
+            alert("You submitted the form!");
+        })
+    </script>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
 </body>
 </html>
