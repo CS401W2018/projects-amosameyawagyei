@@ -15,7 +15,7 @@
         <form action="processing.html" method="post" id="myForm">
             <fieldset>
                 <legend>Sign Up</legend>
-        
+                <div id="message"></div>
                 <div class="form-row">
                     <label for="firstName">First Name:</label>
                     <input type="text" name="firstName" id="firstName" placeholder="first name" >
@@ -36,6 +36,10 @@
                 <div class="form-row">
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email" placeholder="email">
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="age" name="age" id="age" placeholder="age">
                 </div>
 
     
@@ -91,11 +95,8 @@
             </fieldset>
         </form>
         <h2>Engagement Assignment</h2>
-        <p>JavaScript is a type of language that is used to code the front-end of the internet pages</p>
-        <p>The first way is that it is run on virtual machines or a browser or in the DOM (Document Object Module)</p>
-        <p>The other way is with Node.js</p>
-        <p> The most popular front-end js library was JQuery</p>
-        <p>React-Native</p>
+        <p>An AJAX means A-synchronize which means that stuffs is gonna happen out of order</p>
+        <p>It makes the codes easier to read</p>
    
     </main>
 
@@ -103,22 +104,7 @@
     <footer>
         <p>&copy; 2024 Amos Ameyaw Agyei</p>
     </footer>
-    <script>
-        document.getElementById('myForm').addEventListener('submit',function(event){
-            event.preventDefault();
-            const firstName = document.getElementById('firstName').value;
-            const lastName = document.getElementById('lastName').value;
-            const formData ={
-                firstName: firstName,
-                lastName: lastName
-            }
-            if (!firstName || !lastName) {
-                alert("First name and last name required");
-                return;
-            }
-            console.log(formData)
-            alert("You submitted the form!");
-        })
+    <script src="form.js">
     </script>
    
    
