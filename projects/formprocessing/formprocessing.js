@@ -3,7 +3,7 @@ document.getElementById('myForm').addEventListener('submit',function(event){
     const firstName = document.getElementById("firstName").value;
     const lastName = document.getElementById("lastName").value;
     const age = document.getElementById("age").value;
-
+    
 
     if (!firstName || !lastName) {
         alert("First name and last name required");
@@ -18,7 +18,6 @@ document.getElementById('myForm').addEventListener('submit',function(event){
         firstName: firstName,
         lastName: lastName,
         age: age
-
     }
 
     const xhr = new XMLHttpRequest();
