@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formprocessing.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Sign-Up Page</h1>
+    </header>
+
+    <main>
+        <div id="message"></div>
+        <form action="input.html" method="post" id="myForm">
+            <fieldset>
+                <legend>Sign Up</legend>
+        
+                <div class="forms-row">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="first name" >
+                </div>
+
+                <div class="forms-row">
+                    <label for="middleName">Middle Name:</label>
+                    <input type="text" name="middleName" id="middleName" placeholder="middle name">
+                </div>
+                
+                
+                <div class="forms-row">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="last name">
+                </div>
+
+                <div class="forms-row">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" placeholder="Enter your age">
+                </div>
+
+            
+                <div class="forms-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="email">
+                </div>
+
+    
+                <div class="forms-row">
+                    <label for="birthdate">Birthdate:</label>
+                    <input type="date" name="birthdate" id="birthdate" >
+                </div>
+
+                
+                <div class="forms-row">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="phone number" >
+                </div>
+
+
+                <div class="forms-row">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+
+                <div class="checkbox-row">
+                    <div class="prefer">Gender:</div>
+                    <label><input type="radio" name="gender" value="male" > Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+
+                <div class="checkbox-row">
+                    <label><input type="checkbox" name="terms" > I agree to the terms and conditions</label>
+                </div>
+
+                <div class="forms-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="">Select a state</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="California">California</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Alaska">Alaska</option>
+                    </select>
+                </div>
+
+            
+                <div class="forms-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments" placeholder="Your comments"></textarea>
+                </div>
+
+    
+                <div class="forms-row">
+                    <input type="submit" value="submit">
+                </div>
+            </fieldset>
+        </form>
+   
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Amos Ameyaw Agyei</p>
+    </footer>
+    <script src="formprocessing.js"></script>
+   
+</body>
+</html>
