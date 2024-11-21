@@ -4,7 +4,7 @@ body{
 .btn{
     display: block;
     padding: 10px;
-    color: yellow;
+    color: blue;
     background-color: beige;
     width: 110px;
     text-align: center;
@@ -13,5 +13,5 @@ body{
     transition-delay: 2s;
 }
 .btn:hover{
-    background-color: lightcyan;
+    background-color: yellow;
 }
