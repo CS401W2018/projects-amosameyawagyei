@@ -1,0 +1,17 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn{
+    display: block;
+    padding: 10px;
+    color: aqua;
+    background-color: beige;
+    width: 110px;
+    text-align: center;
+    text-decoration: none;
+    transform: backgroud-color 3s ease-in-out;
+    transition-delay: 2s;
+}
+.btn:hover{
+    background-color: lightcyan;
+}
