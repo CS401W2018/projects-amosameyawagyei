@@ -1,0 +1,215 @@
+/*homepage*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    line-height: 1.6;
+}
+.main{
+    background-color: #007bce;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "hero hero"
+        "intro intro"
+        "footer footer";
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.header-right a {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero {
+    grid-area: hero;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: right;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.hero-text h2 {
+    font-size: 20px;
+    float: right;
+    
+}
+
+
+.intro {
+    grid-area: intro;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.intro h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 16px;
+}
+
+
+ 
+footer {
+    grid-area: footer;
+    color: white;
+    text-align: left;
+}
+
+
+
+/*futre career page*/
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:
+        "header header"
+        "navigation navigation"
+        "main main"
+        "footer footer";
+  }
+  main {
+    grid-area: main;
+    
+  }
+.passion{
+    grid-area: main6;
+}
+
+.table {
+    margin: 5px auto;
+    border-spacing: 0;
+    caption-side: top;
+    
+}
+.future{
+    background-color: #007bce;
+}
+
+
+.table td, .table th {
+    border: thick solid pink;
+}
+
+.table td {
+    font-weight: bolder;
+    color: blue;
+}
+
+.table thead {
+    background-color: black;
+    color: white;
+    
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: grey;
+}
+
+.table tfoot {
+    background-color: yellowgreen;
+    color: black;
+}
+
+/*Resume Page*/
+.grid-1{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-areas:
+        "header header"
+        "navigation navigation"
+        "main  main"
+        "footer footer";
+  }
+.resume{
+    background-color: blueviolet;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+      grid-template-areas:
+          "header"
+          "navigation"
+          "main"
+          "footer";
+  }
+  
+  
+  header {
+    order: 1;
+    margin: 0;
+    padding: 0;
+    
+  }
+  main {
+    order: 4;
+  }
+  
+  header h1{
+    margin: 0;
+  }
+  
+  
+    nav {
+        flex-direction: column;
+        background-color: brown;
+        order: 2;
+       
+       
+    }
+    nav a {
+        border-bottom: thin solid white;
+        
+    }
+    .row {
+        flex-direction: column;
+  
+        
+    }
+   
+   footer{
+    order: 5;
+   }
+  }
+
+
+
