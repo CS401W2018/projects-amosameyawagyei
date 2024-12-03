@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+/*General CSS*/
+body {
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:
+   "header header"
+   "navigation navigation"
+   "main main"
+   "footer footer";
+
+  }
+
+header {
+    grid-area: header;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav{grid-area: navigation;
+display: flex;
+justify-content: space-around;}
+
+nav a:hover{
+    color:blue;
+    background-color: gainsboro;
+   
+
+}
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-right: 8rem;
+    font-weight: 500;
+}
+
+main {
+    grid-area: main;
+  }
+.current{
+    color: yellow;
+}
+
+
+
+.logo {
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+}
+footer{grid-area: footer;}
+
+/*homepage*/
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+    grid-area: main2;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+.home .home-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+span {
+    color: #b74b4b;
+}
+
+.home-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p {
+    font-size: 1.4rem;
+}
+
+.home-img img {
+    width: 100%;
+    border-radius: 20%;
+}
+
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #b74b4b;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 40px;
+    color: #b74b4b;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: 0.3s ease;
+}
+.social-icons a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #b74b4b;
+}
+
+/*future Career Page */
+.table {
+    margin: 5px auto;
+    border-spacing: 0;
+    caption-side: top;
+    
+}
+.future{
+    background-color:black;
+}
+.video{
+    
+    padding:50px; 
+    margin-left: 30%;
+    
+}
+
+
+.table td, .table th {
+    border: thick solid pink;
+}
+
+.table td {
+    font-weight: bolder;
+   
+}
+
+.table thead {
+    background-color: black;
+    color: white;
+    
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: green;
+}
+
+.table tfoot {
+    background-color: yellowgreen;
+    color: black;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    background-color: black;
+    border: 1px solid #b74b4b;
+    font-size: 1.4rem;
+    color: #b74b4b;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px;
+    
+}
+
+/*Gallery Page*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-left: 350px;
+    margin-top: 150px;
+  }
+  
+  .item {
+    width: 400px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 255, 0.2);
+  }
+  .itemA{
+    grid-area: main1;
+    width: 400px;
+    box-shadow: 1px 1px 1px 1px grey;
+    
+   
+  }
+  .itemA img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .itemB{
+    grid-area: main2;
+    width: 400px;
+    box-shadow: 1px 1px 1px 1px grey;
+  }
+  .itemB img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .itemC{
+    grid-area: main1;
+    width: 400px;
+    box-shadow: 1px 1px 1px 1px grey;
+  }
+  .itemC img{
+    width: 100%;
+  }
+  .itemD{
+    grid-area: main2;
+    width: 400px;
+    box-shadow: 1px 1px 1px 1px grey;
+  }
+  .itemD img{
+    width: 100%;
+  }
+  .itemE{
+    grid-area: main1;
+    width: 400px;
+    box-shadow: 1px 1px 1px 1px grey;
+  
+  }
+  .itemE img{
+    width: 100%;
+  }
+
+
+/*Projects Page*/
+fieldset {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border: 1px solid #003366;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+
+legend {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+
+.forms-row {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.forms-row input,
+.forms-row textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.forms-row input:focus,
+.forms-row textarea:focus {
+    background-color: #e0f7fa;
+    border-color: #003366;
+    outline: none;
+}
+iframe{
+    width: 50%;
+    height: 400px;
+    grid-area: main1;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #003366;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #005599;
+}
+
+
+#message {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: red; 
+}
+
+
+@media (max-width: 600px){
+    header{
+        flex-direction: column;
+        
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+  .container {
+           flex-direction: column;
+        
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header h1 {
+        font-size: 1.5rem; 
+    }
+    .home{
+        gap: 4rem;
+    }
+    .row {
+        flex-direction: column;
+  
+        
+    }
+    .item{
+        flex-direction: column;
+
+    }
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+    .home .home-content h3{
+        font-size: 2.5rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    
+    fieldset {
+        width: 90%;
+    }
+
+    .forms-row input,
+    .forms-row textarea {
+        font-size: 0.9rem;
+    }
+    iframe{
+        width: 100%;
+    }
+}
+
